@@ -51,7 +51,7 @@ function HorizentalMoveSkills() {
         {/* First set of icons */}
         {icons.map((item, index) => (
           <div key={`first-${index}`} className='flex-shrink-0 mx-8 group'>
-            <span className='text-5xl text-gray-500 group-hover:text-cyan-600 transition-colors duration-300 cursor-pointer'>
+            <span className='text-5xl text-gray-500 group-hover:text-cyan-600 transition-colors duration-300'>
               <item.icon />
             </span>
           </div>
