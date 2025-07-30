@@ -9,11 +9,11 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Experiance",
+      label: "Projects",
       href: "/",
     },
     {
-      label: "Projects",
+      label: "Experiance",
       href: "/",
     },
     {
@@ -31,11 +31,11 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Experiance",
+      label: "Projects",
       href: "/",
     },
     {
-      label: "Projects",
+      label: "Experiance",
       href: "/",
     },
     {
