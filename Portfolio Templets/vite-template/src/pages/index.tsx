@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { GrFormNextLink } from "react-icons/gr";
 import HorizentalMoveSkills from "@/components/HorizentalMoveSkills";
+import Projects from "@/components/Projects Section/Projects";
 export default function IndexPage() {
   // Page transition variants
   const pageVariants = {
@@ -100,7 +101,6 @@ export default function IndexPage() {
 
   return (
     <motion.div
-      className="relative"
       initial="initial"
       animate="in"
       exit="out"
@@ -126,8 +126,9 @@ export default function IndexPage() {
           className="relative -top-20 left-60 block w-[100px] h-[600px] lg:h-[800px] bg-cyan-600 blur-3xl rounded-full -rotate-45"></motion.span>
       </div>
       <DefaultLayout>
+        
         <motion.div  
-          className="lg:my-20 "
+          className="lg:my-20 relative"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -135,9 +136,6 @@ export default function IndexPage() {
         >
 
         {/* ICONS */}
-
-    
-
 
           <motion.div 
             className="my-4 lg:text-center space-y-2"
@@ -164,7 +162,6 @@ export default function IndexPage() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi vel harum natus, blanditiis quae a dignissimos laboriosam dicta commodi et. Mollitia illum deleniti facere porro blanditiis similique dolores, quisquam magnam est illo reiciendis harum nemo. Suscipit tempore quaerat architecto.
             </motion.p>
           </motion.div>
-          
           <motion.div 
             className="flex gap-8 lg:gap-14 justify-center items-center poppins-medium my-10"
             variants={itemVariants}
@@ -187,13 +184,15 @@ export default function IndexPage() {
               See Projects <span className="text-lg"><GrFormNextLink/></span>
             </motion.button>
           </motion.div>
+
         </motion.div>
+
 
         <div className="w-full my-10 p-3 flex justify-center">
           <HorizentalMoveSkills />
         </div>
-
       </DefaultLayout>
+      
     </motion.div>
   );
 }
