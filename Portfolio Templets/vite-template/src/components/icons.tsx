@@ -1,4 +1,5 @@
 import * as React from "react";
+import { FaGithub, FaTwitter, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 import { IconSvgProps } from "@/types";
 
@@ -183,4 +184,21 @@ export const SearchIcon = (props: IconSvgProps) => (
       strokeWidth="2"
     />
   </svg>
+);
+
+// React Icons versions
+export const GitHubIcon = ({ size = 24, ...props }: IconSvgProps) => (
+  <FaGithub size={size} {...props} />
+);
+
+export const XIcon = ({ size = 24, ...props }: IconSvgProps) => (
+  <FaTwitter size={size} {...props} />
+);
+
+export const LinkedInIcon = ({ size = 24, ...props }: IconSvgProps) => (
+  <FaLinkedin size={size} {...props} />
+);
+
+export const FacebookIcon = ({ size = 24, ...props }: IconSvgProps) => (
+  <FaFacebook size={size} {...props} />
 );
