@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoCubeOutline } from "react-icons/io5";
 import { ProjectsConfig } from '@/config/projectsData';
-import { RiArrowRightFill } from "react-icons/ri";
+import { RiArrowRightFill, RiGithubFill } from "react-icons/ri";
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react';
 
 function Projects() {
+  const [isShowAllProjects, setIsShowAllProjects] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -130,10 +131,7 @@ function Projects() {
             <motion.span 
               className='lg:w-[300px] lg:h-[300px] rounded-full bg-cyan-500 absolute z-10 -top-10 -left-20 blur-[140px]'
               initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ 
-                opacity: 1, 
-                scale: 1,
-                transition: { duration: 1.2, ease: "easeOut" }
+              whileInView={{ opacity: 1, scale: 1,transition: { duration: 1.2, ease: "easeOut" }
               }}
               viewport={{ once: true, margin: "-50px" }}
             ></motion.span>
@@ -141,67 +139,55 @@ function Projects() {
             <motion.div 
               className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
-              whileInView={{ 
-                opacity: 1, 
-                y: 0, 
-                scale: 1, 
-                filter: "blur(0px)",
-                transition: { duration: 0.8, ease: "easeOut" }
+              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut" }
               }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ 
-                scale: 1.02,
-                transition: { duration: 0.2 }
+              whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
-            ></motion.div>
+            >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[0].image} alt="Error" />
+              </div>
+            </motion.div>
             <motion.div 
               className='bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
-              whileInView={{ 
-                opacity: 1, 
-                y: 0, 
-                scale: 1, 
-                filter: "blur(0px)",
-                transition: { duration: 0.8, ease: "easeOut", delay: 0.1 }
+              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.1 }
               }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ 
-                scale: 1.02,
-                transition: { duration: 0.2 }
+              whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
-            ></motion.div>
+            >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[1].image} alt="Error" />
+              </div>
+            </motion.div>
             <motion.div 
               className='bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
-              whileInView={{ 
-                opacity: 1, 
-                y: 0, 
-                scale: 1, 
-                filter: "blur(0px)",
-                transition: { duration: 0.8, ease: "easeOut", delay: 0.2 }
+              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.2 }
               }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ 
-                scale: 1.02,
-                transition: { duration: 0.2 }
+              whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
-            ></motion.div>
+            >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[2].image} alt="Error" />
+              </div>
+            </motion.div>
             <motion.div 
               className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
-              whileInView={{ 
-                opacity: 1, 
-                y: 0, 
-                scale: 1, 
-                filter: "blur(0px)",
-                transition: { duration: 0.8, ease: "easeOut", delay: 0.3 }
+              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.3 }
               }}
               viewport={{ once: true, margin: "-50px" }}
-              whileHover={{ 
-                scale: 1.02,
-                transition: { duration: 0.2 }
+              whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
-            ></motion.div>
+            >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[3].image} alt="Error" />
+              </div>
+            </motion.div>
 
             <motion.span 
               className='lg:w-[300px] lg:h-[300px] rounded-full bg-orange-600 absolute -right-20 -bottom-10 z-10 blur-[140px]'
@@ -209,14 +195,94 @@ function Projects() {
                   background: "linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%)",
                 }}
               initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ 
-                opacity: 1, 
-                scale: 1,
-                transition: { duration: 1.2, ease: "easeOut", delay: 0.4 }
+              whileInView={{ opacity: 1, scale: 1,transition: { duration: 1.2, ease: "easeOut", delay: 0.4 }
               }}
               viewport={{ once: true, margin: "-50px" }}
             ></motion.span>
         </div>
+        {
+          isShowAllProjects && (
+            <div 
+            id='bento-grid'
+            className='grid lg:grid-cols-3 gap-3 lg:gap-6 mx-auto lg:w-[80%] py-0 px-6 relative'
+          >
+              <motion.span 
+                className='lg:w-[300px] lg:h-[300px] rounded-full bg-cyan-500 absolute z-10 -top-10 -left-20 blur-[140px]'
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{  opacity: 1,  scale: 1, transition: { duration: 1.2, ease: "easeOut" }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+              ></motion.span>
+              
+              <motion.div 
+                className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
+                whileInView={{  opacity: 1,  y: 0,  scale: 1,  filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut" }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+                whileHover={{  scale: 1.02, transition: { duration: 0.2 }
+                }}
+              >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[4].image} alt="Error" />
+              </div>
+              </motion.div>
+
+
+
+              <motion.div 
+                className='lg:row-span-2 bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
+                whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.1 }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+                whileHover={{  scale: 1.02, transition: { duration: 0.2 }
+                }}
+              >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[5].image} alt="Error" />
+              </div>
+              </motion.div>
+              <motion.div 
+                className=' bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
+                whileInView={{  opacity: 1,  y: 0,  scale: 1,  filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut", delay: 0.2 }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+                whileHover={{  scale: 1.02, transition: { duration: 0.2 }
+                }}
+              >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[6].image} alt="Error" />
+              </div>
+              </motion.div>
+              <motion.div 
+                className='col-span-1 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
+                whileInView={{  opacity: 1,  y: 0,  scale: 1,  filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut", delay: 0.3 }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+                whileHover={{  scale: 1.02, transition: { duration: 0.2 }
+                }}
+              >
+              <div className='w-full h-full overflow-hidden'>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[3].image} alt="Error" />
+              </div>
+              </motion.div>
+  
+              <motion.span 
+                className='lg:w-[300px] lg:h-[300px] rounded-full bg-orange-600 absolute -right-20 -bottom-10 z-10 blur-[140px]'
+                style={{
+                    background: "linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%)",
+                  }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{  opacity: 1,  scale: 1, transition: { duration: 1.2, ease: "easeOut", delay: 0.4 }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+              ></motion.span>
+            </div>
+          )
+        }
         
         {/* See all Projects button */}
         <motion.div 
@@ -224,12 +290,14 @@ function Projects() {
           variants={itemVariants}
         >
             <motion.button 
+              onClick={() => setIsShowAllProjects(!isShowAllProjects)}
               className='dark:bg-neutral-900 ring-1 dark:ring-slate-800 ring-slate-300 cursor-pointer text-center px-16 py-4 rounded-full bg-white shadow-lg poppins-bold text-sm flex gap-3 justify-center items-center'
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
             >
-              <span className='text-2xl'><RiArrowRightFill /></span>See All Projects
+              <span className='text-2xl'><RiArrowRightFill /></span>
+              {isShowAllProjects ? "See Less Projects" : "See All Projects"}
             </motion.button>
         </motion.div>
     </motion.div>
