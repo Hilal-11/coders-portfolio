@@ -49,17 +49,17 @@ export default function DocsPage() {
               <p>I'm Bark Aten, a passionate Web Designer & Developer based in the dynamic city of Berlin, Germany. I blend creative design with precise technical execution to deliver outstanding digital experiences. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div className="flex gap-6 justify-evenly flex-wrap lg:px-10 py-6">
-              {
-                techIcons.map((skill) => {
-                  const IconComponent = skill.icon;
-                  return (
-                    <div key={skill.id}>
-                      <IconComponent size={60}/>
-                    </div>
-                  )
-                })
-              }
+            <div className="flex gap-3 lg:gap-5 justify-evenly flex-wrap lg:px-10 py-6 lg:h-auto h-[260px] overflow-hidden">
+
+                  {techIcons.map((skill) => {
+                    const IconComponent = skill.icon;
+                    return (
+                      <div key={skill.id}>
+                        <div className="flex justify-center items-center rounded-md shadow-sm shadow-gray-300 dark:bg-neutral-900 dark:shadow-slate-600 w-[70px] h-[70px]"><span className="text-5xl"><IconComponent /></span></div>
+                      </div>
+                    );
+                  })}
+
             </div>
         </div>
 
