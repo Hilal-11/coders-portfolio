@@ -22,7 +22,7 @@ export const siteConfig = {
     },
     {
       label: "Connect with",
-      href: "/",
+      href: "/Contect#contect_secession",
     },
   ],
   navMenuItems: [
@@ -44,7 +44,7 @@ export const siteConfig = {
     },
     {
       label: "Connect with",
-      href: "/",
+      href: "/contect#contect_secession",
     },
   ],
   links: {
