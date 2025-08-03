@@ -6,45 +6,45 @@ export const siteConfig = {
   navItems: [
     {
       label: "Work",
-      href: "/",
+      to: "work_section",
     },
     {
       label: "Projects",
-      href: "/",
+      to: "projects_section",
     },
     {
       label: "Experiance",
-      href: "/",
+      to: "experiance_section",
     },
     {
       label: "About",
-      href: "/",
+      to: "about_section",
     },
     {
       label: "Connect with",
-      href: "/Contect#contect_secession",
+      to: "contact_section",
     },
   ],
   navMenuItems: [
     {
       label: "Work",
-      href: "/",
+      to: "work_section",
     },
     {
       label: "Projects",
-      href: "/",
+      to: "projects_section",
     },
     {
       label: "Experiance",
-      href: "/",
+      to: "experiance_section",
     },
     {
       label: "About",
-      href: "/",
+      to: "about_section",
     },
     {
       label: "Connect with",
-      href: "/contect#contect_secession",
+      to: "contact_section",
     },
   ],
   links: {
