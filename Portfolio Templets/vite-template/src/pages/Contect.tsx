@@ -1,8 +1,7 @@
 import React from 'react'
-
 function contect() {
   return (
-    <div id='contect_secession' className='bg-slate-50 dark:bg-black w-full h-auto flex justify-center items-center py-10 px-3 lg:py-28'>
+    <div id='contact_section' className='bg-slate-50 dark:bg-black w-full h-auto flex justify-center items-center py-10 px-3 lg:py-28'>
         <div className='w-full lg:w-[80%] mx-auto h-auto rounded-2xl bg-white dark:bg-neutral-950 shadow-[0_3px_10px_rgb(0,0,0,0.2)] grid grid-cols-1 lg:grid-cols-2 gap-2'>
             <div className='flex justify-center'>
                 <div className='py-8 px-8 lg:px-20 lg:py-20 space-y-4'>
