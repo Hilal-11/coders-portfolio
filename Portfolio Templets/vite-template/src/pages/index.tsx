@@ -5,6 +5,7 @@ import { HiDownload } from "react-icons/hi";
 import { GrFormNextLink } from "react-icons/gr";
 import HorizentalMoveSkills from "@/components/HorizentalMoveSkills";
 import Projects from "@/components/Projects Section/Projects";
+import myCv from '../../public/cv.pdf'
 export default function IndexPage() {
   // Page transition variants
   const pageVariants = {
@@ -123,11 +124,12 @@ export default function IndexPage() {
               duration: 1.9,
               delay: 2,
             }}
-          className="relative -top-20 left-60 block w-[100px] h-[600px] lg:h-[800px] bg-cyan-600 blur-3xl rounded-full -rotate-45"></motion.span>
+          className="hidden lg:block relative -top-20 left-60 block w-[200px] h-[600px] lg:h-[800px] bg-gray-300 blur-3xl rounded-full -rotate-45"></motion.span>
       </div>
       <DefaultLayout>
         
         <motion.div  
+          id="hero-section"
           className="lg:my-20 relative"
           variants={containerVariants}
           initial="hidden"
@@ -142,7 +144,7 @@ export default function IndexPage() {
             variants={itemVariants}
           >
             <motion.h1 
-              className="text-5xl lg:text-7xl poppins-extrabold"
+              className="text-3xl text-center lg:text-7xl poppins-bold lg:poppins-extrabold"
               style={{
                 textShadow: "0 10px 20px rgba(0,0,0,0.4)"
               }}
@@ -153,29 +155,31 @@ export default function IndexPage() {
                 transition: { duration: 0.3 }
               }}
             >
-              Hi there welcome, this is <span className="text-orange-400">John Martin</span>, the full stack developer with AI Integrations
+              Hi there welcome, this is Bark Aten, the full stack developer with AI Integrations
             </motion.h1>
             <motion.p 
-              className="lg:px-34 py-2 poppins-medium text-lg"
+              className="lg:px-34 poppins-medium text-lg lg:text-lg text-center py-6"
               variants={itemVariants}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi vel harum natus, blanditiis quae a dignissimos laboriosam dicta commodi et. Mollitia illum deleniti facere porro blanditiis similique dolores, quisquam magnam est illo reiciendis harum nemo. Suscipit tempore quaerat architecto.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi vel harum natus, blanditiis quae a dignissimos laboriosam dicta commodi et. Mollitia illum deleniti facere porro blanditiis similique dolores, quisquam magnam est illo reiciendis harum nemo.
             </motion.p>
           </motion.div>
           <motion.div 
-            className="flex gap-8 lg:gap-14 justify-center items-center poppins-medium my-10"
+            className="flex flex-wrap gap-4 lg:gap-6 justify-center items-center poppins-medium my-6 lg:my-10"
             variants={itemVariants}
           >
-            <motion.button 
-              className="text-sm ring-1 ring-slate-300 shadow-md shadow-slate-800 px-6 lg:px-14 py-3 rounded-2xl cursor-pointer transition-all duration-300 backdrop-blur-sm flex items-center gap-4"
+            <motion.a 
+              className="w-full lg:w-[230px] poppins-bold text-md  shadow-sm shadow-black bg-black text-white dark:bg-white dark:text-black py-[9px] lg:rounded-xl rounded-xl cursor-pointer transition-all duration-300  flex justify-center items-center gap-4"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
+              href={myCv} target="_blank"
+              
             >
               Download cv <span className="text-lg"><HiDownload /></span>
-            </motion.button>
+            </motion.a>
             <motion.button 
-              className="text-sm ring-1 ring-slate-300 shadow-md shadow-slate-800 px-6 lg:px-14 py-3 rounded-2xl cursor-pointer transition-all duration-300 backdrop-blur-sm flex items-center gap-4"
+              className=" w-full lg:w-[230px] poppins-bold text-md shadow-sm shadow-slate-800  py-[9px] lg:rounded-xl rounded-xl cursor-pointer transition-all duration-300  flex justify-center items-center gap-4"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
