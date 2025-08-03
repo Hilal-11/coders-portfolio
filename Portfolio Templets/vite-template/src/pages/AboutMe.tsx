@@ -7,7 +7,7 @@ import { techIcons } from "@/config/skillsIcon";
 
 export default function DocsPage() {
   return (
-    <div className="w-full px-4 lg:w-[80%] mx-auto h-full flex flex-col items-center justify-center">
+    <div id="about_section" className="w-full px-4 lg:w-[80%] mx-auto h-full flex flex-col items-center justify-center">
       <div className="py-10">
         <h1 className="poppins-bold text-5xl lg:text-7xl">Who I am?</h1>
       </div>
@@ -41,7 +41,7 @@ export default function DocsPage() {
           </div>
         </div>
 
-        <div className="lg:col-span-2 w-full mx-auto relative z-50 overflow-hidden">
+        <div className="lg:col-span-2 w-full mx-auto relative overflow-hidden z-20">
 
         <div className="flex justify-center gap-10 items-center absolute top-[100%] left-1/2 -z-10">
           <span className=" block w-[700px] h-[700px] rounded-full shadow-lg shadow-slate-950 dark:shadow-green-500 blur-[1px] absolute"></span>
@@ -57,12 +57,12 @@ export default function DocsPage() {
               <p>I'm Bark Aten, a passionate Web Designer & Developer based in the dynamic city of Berlin, Germany. I blend creative design with precise technical execution to deliver outstanding digital experiences. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div className="flex gap-3 lg:gap-5 justify-evenly flex-wrap lg:px-10 py-6 lg:h-auto h-[260px] overflow-hidden">
+            <div className="flex gap-3 lg:gap-5 justify-evenly flex-wrap lg:px-10 py-6 lg:h-auto h-[260px] overflow-hidden z-10">
                   {techIcons.map((skill) => {
                     const IconComponent = skill.icon;
                     return (
-                      <div key={skill.id}>
-                        <div className="flex justify-center items-center rounded-md shadow-sm shadow-gray-300 dark:bg-neutral-900 dark:shadow-slate-600 w-[70px] h-[70px]"><span className="text-5xl"><IconComponent /></span></div>
+                      <div key={skill.id} className="z-10">
+                        <div className="flex justify-center items-center rounded-md shadow-sm shadow-gray-300 dark:bg-neutral-900 dark:shadow-slate-600 w-[70px] h-[70px] z-10  "><span className="text-5xl"><IconComponent /></span></div>
                       </div>
                     );
                   })}
