@@ -87,6 +87,7 @@ function Projects() {
 
   return (  
     <motion.div 
+      id='projects_section'
       ref={ref}
       className='w-full h-auto bg-slate-200 dark:bg-neutral-950 py-10 lg:py-20'
       variants={containerVariants}
@@ -137,7 +138,7 @@ function Projects() {
             ></motion.span>
             
             <motion.div 
-              className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+              className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut" }
               }}
@@ -150,7 +151,7 @@ function Projects() {
               </div>
             </motion.div>
             <motion.div 
-              className='bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+              className='bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.1 }
               }}
@@ -163,7 +164,7 @@ function Projects() {
               </div>
             </motion.div>
             <motion.div 
-              className='bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+              className='bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.2 }
               }}
@@ -176,7 +177,7 @@ function Projects() {
               </div>
             </motion.div>
             <motion.div 
-              className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+              className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
               initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
               whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.3 }
               }}
@@ -215,7 +216,7 @@ function Projects() {
               ></motion.span>
               
               <motion.div 
-                className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                className='col-span-2 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
                 initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
                 whileInView={{  opacity: 1,  y: 0,  scale: 1,  filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut" }
                 }}
@@ -231,7 +232,7 @@ function Projects() {
 
 
               <motion.div 
-                className='lg:row-span-2 bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                className='lg:row-span-2 bg-zinc-100 dark:bg-neutral-900 h-auto rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
                 initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
                 whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)",transition: { duration: 0.8, ease: "easeOut", delay: 0.1 }
                 }}
@@ -244,7 +245,7 @@ function Projects() {
               </div>
               </motion.div>
               <motion.div 
-                className=' bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                className=' bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
                 initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
                 whileInView={{  opacity: 1,  y: 0,  scale: 1,  filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut", delay: 0.2 }
                 }}
@@ -257,7 +258,7 @@ function Projects() {
               </div>
               </motion.div>
               <motion.div 
-                className='col-span-1 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-50'
+                className='col-span-1 bg-zinc-100 dark:bg-neutral-900 h-[320px] rounded-xl shadow-lg shadow-gray-400 dark:shadow-gray-950 z-20'
                 initial={{ opacity: 0, y: 60, scale: 0.9, filter: "blur(4px)" }}
                 whileInView={{  opacity: 1,  y: 0,  scale: 1,  filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut", delay: 0.3 }
                 }}
