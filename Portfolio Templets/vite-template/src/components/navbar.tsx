@@ -21,41 +21,50 @@ import {
  } from "@/components/icons";
 import { Logo } from "@/components/icons";
 
+import { Link as ScrollLink } from 'react-scroll';
+
+
 export const Navbar = () => {
 
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <HeroUINavbar maxWidth="xl" position="sticky"  className="fixed z-50">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand className="gap-3 max-w-fit">
-          <Link
-            className="flex justify-start items-center gap-4"
+        <NavbarBrand className="gap-0 max-w-fit">
+          <ScrollLink
+            className="flex justify-start items-center gap-0"
             color="foreground"
-            href="/"
+            
           >
             <Logo />
-            <p className="font-bold text-inherit">CODE</p>
-          </Link>
+            <ScrollLink to="hero-section" smooth={true}
+            duration={500}
+            offset={-50} className="poppins-medium lg:text-xl">helloCode404</ScrollLink>
+          </ScrollLink>
         </NavbarBrand>
-        <div className="hidden lg:flex gap-4 justify-start ml-2 poppins-medium">
+        <div className="hidden lg:flex gap-6 px-5 justify-start ml-2 poppins-medium z-50">
           {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <Link
+            <NavbarItem key={item.to}>
+              <ScrollLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium cursor-pointer",
                 )}
                 color="foreground"
-                href={item.href}
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={-50}
+                
               >
                 {item.label}
-              </Link>
+              </ScrollLink>
             </NavbarItem>
           ))}
         </div>
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden sm:flex basis-1/5 sm:basis-full z-50"
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
@@ -81,10 +90,11 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2 poppins-medium">
+        <div className="mx-4 mt-2 flex flex-col gap-2 poppins-medium z-50">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
+              <ScrollLink
+              
                 color={
                   index === 2
                     ? "primary"
@@ -92,11 +102,14 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={-50}
                 size="lg"
               >
                 {item.label}
-              </Link>
+              </ScrollLink>
             </NavbarMenuItem>
           ))}
         </div>
