@@ -17,7 +17,7 @@ function App() {
       </div>
       {/* CONTECT PAGE */}
       {/* About Section */}
-      <div className="w-full dark:bg-black bg-slate-50">
+      <div className="">
           <About />
       </div>
 
