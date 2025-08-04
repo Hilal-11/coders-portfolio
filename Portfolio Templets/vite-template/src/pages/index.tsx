@@ -126,7 +126,7 @@ export default function IndexPage() {
             }}
           className="hidden lg:block relative -top-20 left-60 block w-[200px] h-[600px] lg:h-[800px] bg-gray-300 blur-3xl rounded-full -rotate-45"></motion.span>
       </div>
-      <DefaultLayout>
+      {/* <DefaultLayout> */}
         
         <motion.div  
           id="hero-section"
@@ -195,7 +195,7 @@ export default function IndexPage() {
         <div className="w-full my-10 p-3 flex justify-center">
           <HorizentalMoveSkills />
         </div>
-      </DefaultLayout>
+      {/* </DefaultLayout> */}
       
     </motion.div>
   );
