@@ -35,7 +35,8 @@
     "react-router-dom": "^6.23.0",
     "react-scroll": "^1.9.3",
     "tailwind-variants": "2.0.1",
-    "tailwindcss": "4.1.11"
+    "tailwindcss": "4.1.11",
+    "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {
     "@eslint/compat": "1.2.8",
