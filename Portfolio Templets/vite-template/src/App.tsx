@@ -9,8 +9,6 @@ import DefaultLayout from "./layouts/default";
 function App() {
   return (
     <>
-
-
           <Routes>
             <Route path="/" element={
               <>
@@ -22,10 +20,9 @@ function App() {
                   <Contect />
               </>
             }></Route>
-          </Routes>
+          
 
-          <Routes>
-            <Route path="/projects" element={
+            <Route path="/projects/:id" element={
               <>
                 <DefaultLayout>
                   <ProjectsPreview />
@@ -33,7 +30,6 @@ function App() {
               </>
             }></Route>
           </Routes>
-
           <Footer />
     </>
     
