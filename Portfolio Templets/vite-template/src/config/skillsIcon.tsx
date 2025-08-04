@@ -59,8 +59,8 @@ export const techIcons: SkillsConfig = [
   { id: 30 , icon: SiPostman },
   { id: 31 , icon: SiFramer },
   { id: 32 , icon: SiWebgl },
-  { id: 32 , icon: SiUnity },
-  { id: 32 , icon: SiBlender },
+  { id: 33 , icon: SiUnity },
+  { id: 34 , icon: SiBlender },
 
 
 
