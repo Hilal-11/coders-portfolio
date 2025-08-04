@@ -4,15 +4,24 @@ import { SiShadcnui } from "react-icons/si";
 import { RiRemixRunLine } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { TbBrandReactNative } from "react-icons/tb";
+import { useParams } from 'react-router-dom'
+// import { ProjectsConfig } from '@/config/projectsData';
+import { ProjectsConfig } from '../../config/projectsData'
+function ProjectsPreview( ) {
+    const { id } = useParams()
 
-function ProjectsPreview() {
+    // const fetchProjectData = () => {
+    //     return ProjectsConfig.filter((project) => project.id)
+    // }
+
+    const project = ProjectsConfig.find((project) => project.uniqueID === id)
+
   return (
     <div className='w-full h-auto py-2 lg:py-20'>
         <div className='grid grid-cols-1 lg:grid-cols-2 justify-between py-10'>
             <div className=' poppins-regular space-y-4'>
-                <h1 className='poppins-bold text-4xl lg:text-6xl'>AI SaaS Template</h1>
-                <p className='poppins-medium text-sm lg:text-lg'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga reiciendis est quisquam ducimus assumenda omnis provident nulla, aut ullam blanditiis, mollitia dolores? Sit voluptatem ratione nihil tempore illo commodi minus nemo distinctio assumenda eum reprehenderit neque.</p>
-
+                <h1 className='poppins-bold text-4xl lg:text-6xl'>{project.name}</h1>
+                <p className='poppins-medium text-sm lg:text-lg'>{project.description}</p>
 
             </div>
 
@@ -34,18 +43,13 @@ function ProjectsPreview() {
 
         <div className='flex justify-center items-center py-20'>
             <div className='grid lg:grid-cols-2 grid-cols-1 w-full lg:gap-4 gap-2 '>
-                <div className=' rounded-2xl shadow-sm shadow-gray-400'>
-                    <img className='rounded-2xl object-cover' src="https://res.cloudinary.com/dou5rypdf/image/upload/v1754305561/Screenshot_2025-08-03_230537_cho01w.png" alt="Error" />
-                </div>
-                <div className=' rounded-2xl shadow-sm shadow-gray-400'>
-                    <img className='rounded-2xl object-contain' src="https://res.cloudinary.com/dou5rypdf/image/upload/v1754305606/Screenshot_2025-08-03_230628_wtc5r1.png" alt="Error" />
-                </div>
-                <div className=' rounded-2xl shadow-sm shadow-gray-400'>
-                    <img className='rounded-2xl object-cover' src="https://res.cloudinary.com/dou5rypdf/image/upload/v1754305562/Screenshot_2025-08-03_230551_lw86cw.png" alt="Error" />
-                </div>
-                <div className=' rounded-2xl shadow-sm shadow-gray-400'>
-                    <img className='rounded-2xl  object-cover' src="https://res.cloudinary.com/dou5rypdf/image/upload/v1754305562/Screenshot_2025-08-03_230551_lw86cw.png" alt="Error" />
-                </div>
+                {
+                    project.images.map((image) => (
+                        <div key={project.uniqueID} className=' rounded-2xl shadow-sm shadow-gray-400'>
+                            <img className='rounded-2xl object-cover' src={image} alt="Error" />
+                        </div>
+                    ))
+                }
             </div>
         </div>
 
