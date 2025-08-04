@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RiNextjsFill  , RiTailwindCssFill } from "react-icons/ri";
 import { SiShadcnui } from "react-icons/si";
 import { RiRemixRunLine } from "react-icons/ri";
@@ -10,9 +10,9 @@ import { ProjectsConfig } from '../../config/projectsData'
 function ProjectsPreview( ) {
     const { id } = useParams()
 
-    // const fetchProjectData = () => {
-    //     return ProjectsConfig.filter((project) => project.id)
-    // }
+    useEffect(() => {
+        window.scrollTo(0 , 0);
+    }, [])
 
     const project = ProjectsConfig.find((project) => project.uniqueID === id)
 
