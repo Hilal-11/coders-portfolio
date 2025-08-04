@@ -4,12 +4,13 @@ import { ProjectsConfig } from '@/config/projectsData';
 import { RiArrowRightFill, RiGithubFill } from "react-icons/ri";
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Projects() {
   const [isShowAllProjects, setIsShowAllProjects] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
+  const navigate = useNavigate('')
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -135,6 +136,7 @@ function Projects() {
               whileInView={{ opacity: 1, scale: 1,transition: { duration: 1.2, ease: "easeOut" }
               }}
               viewport={{ once: true, margin: "-50px" }}
+              
             ></motion.span>
             
             <motion.div 
@@ -146,8 +148,8 @@ function Projects() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[0].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[0].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[0].images[0]} alt="Error" />
               </div>
             </motion.div>
             <motion.div 
@@ -159,8 +161,8 @@ function Projects() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[1].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[1].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[1].images[1]} alt="Error" />
               </div>
             </motion.div>
             <motion.div 
@@ -172,8 +174,8 @@ function Projects() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[2].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[2].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[2].images[2]} alt="Error" />
               </div>
             </motion.div>
             <motion.div 
@@ -185,8 +187,8 @@ function Projects() {
               whileHover={{ scale: 1.02,transition: { duration: 0.2 }
               }}
             >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[3].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[3].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[3].images[3]} alt="Error" />
               </div>
             </motion.div>
 
@@ -224,8 +226,8 @@ function Projects() {
                 whileHover={{  scale: 1.02, transition: { duration: 0.2 }
                 }}
               >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[4].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[4].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[4].images[0]} alt="Error" />
               </div>
               </motion.div>
 
@@ -240,8 +242,8 @@ function Projects() {
                 whileHover={{  scale: 1.02, transition: { duration: 0.2 }
                 }}
               >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[5].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[5].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[5].images[4]} alt="Error" />
               </div>
               </motion.div>
               <motion.div 
@@ -253,8 +255,8 @@ function Projects() {
                 whileHover={{  scale: 1.02, transition: { duration: 0.2 }
                 }}
               >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[6].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[6].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[6].images[2]} alt="Error" />
               </div>
               </motion.div>
               <motion.div 
@@ -266,8 +268,8 @@ function Projects() {
                 whileHover={{  scale: 1.02, transition: { duration: 0.2 }
                 }}
               >
-              <div className='w-full h-full overflow-hidden'>
-                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[3].image} alt="Error" />
+              <div className='w-full h-full overflow-hidden' onClick={() => navigate(`/projects/${ProjectsConfig[4].uniqueID}`)}>
+                  <img className='w-full h-full object-cover rounded-xl' src={ProjectsConfig[7].images[0]} alt="Error" />
               </div>
               </motion.div>
   
