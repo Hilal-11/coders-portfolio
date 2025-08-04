@@ -48,10 +48,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "#",
-    twitter: "#",
-    docs: "#",
-    discord: "#",
-    sponsor: "#",
+    github: "https://github.com/hilal-11",
+    twitter: "https://x.com/Hilal3884871845",
+
   },
 };
