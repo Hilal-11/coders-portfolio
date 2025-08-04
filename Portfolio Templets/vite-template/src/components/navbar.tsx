@@ -15,10 +15,12 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { Logo } from "@/components/icons";
+
 import { Link as ScrollLink } from 'react-scroll';
 import { FaGithub } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom'
+import localhostIcon from '../../localhostLogo.svg'
 
 
 export const Navbar = () => {
@@ -28,18 +30,17 @@ export const Navbar = () => {
   return (
     <HeroUINavbar maxWidth="xl" position="sticky"  className="fixed z-50">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand className="gap-0 max-w-fit">
+        <NavbarBrand className="gap-0 ">
           <ScrollLink
             className="flex justify-start items-center gap-0"
             color="foreground"
             
           >
-            <Logo />
+            {/* <Logo /> */}
             <ScrollLink to="hero-section" smooth={true}
             duration={500}
             offset={-50}
-            
-            className="poppins-medium lg:text-xl cursor-pointer"><span onClick={() => navigate('/')}>helloCode404</span></ScrollLink>
+            className=" lg:poppins-medium lg:text-2xl cursor-pointer flex justify-center items-center "><span onClick={() => navigate('/')} className="flex justify-center items-center relative -left-4"><img className="w-12 lg:w-16 relative lg:left-2" src={localhostIcon} alt="Err" />localhost</span></ScrollLink>
           </ScrollLink>
         </NavbarBrand>
         <div className="hidden lg:flex gap-6 px-5 justify-start ml-2 poppins-medium z-50">
