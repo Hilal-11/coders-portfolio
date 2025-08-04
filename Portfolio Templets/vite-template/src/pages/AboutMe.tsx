@@ -72,22 +72,22 @@ export default function DocsPage() {
                 <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>Frontend Dev</p>
                 </div>
-                <div className="shadow-[inset_-12px_-8px_40px_#46464620] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100 poppins-regular lg:text-sm text-[12px]">
+                <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>Backend Dev</p>
                 </div>
-                <div className="shadow-[inset_-12px_-8px_40px_#46464620] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100 poppins-regular lg:text-sm text-[12px]">
+                <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>Devops</p>
                 </div>
-                <div className="shadow-[inset_-12px_-8px_40px_#46464620] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100 poppins-regular lg:text-sm text-[12px]">
+                <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>AI Integration</p>
                 </div>
-                <div className="shadow-[inset_-12px_-8px_40px_#46464620] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100 poppins-regular lg:text-sm text-[12px]">
+                <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>UI/UX Designer</p>
                 </div>
-                <div className="shadow-[inset_-12px_-8px_40px_#46464620] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100 poppins-regular lg:text-sm text-[12px]">
+                <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>Data Analytics</p>
                 </div>
-                <div className="shadow-[inset_-12px_-8px_40px_#46464620] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100 poppins-regular lg:text-sm text-[12px]">
+                <div className="shadow-[inset_-12px_-8px_40px_rgba(230,200,200,0.125)] lg:px-12 px-8 lg:py-3 py-2 rounded-lg flex justify-center items-center dark:bg-neutral-950 bg-slate-100  poppins-regular lg:text-sm text-[12px]">
                   <p>React Native Dev</p>
                 </div>
             </div>
