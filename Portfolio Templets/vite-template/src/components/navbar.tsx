@@ -14,17 +14,16 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
- } from "@/components/icons";
 import { Logo } from "@/components/icons";
-
 import { Link as ScrollLink } from 'react-scroll';
+import { FaGithub } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { useNavigate } from 'react-router-dom'
 
 
 export const Navbar = () => {
+
+  const navigate = useNavigate('')
 
   return (
     <HeroUINavbar maxWidth="xl" position="sticky"  className="fixed z-50">
@@ -38,7 +37,9 @@ export const Navbar = () => {
             <Logo />
             <ScrollLink to="hero-section" smooth={true}
             duration={500}
-            offset={-50} className="poppins-medium lg:text-xl">helloCode404</ScrollLink>
+            offset={-50}
+            
+            className="poppins-medium lg:text-xl cursor-pointer"><span onClick={() => navigate('/')}>helloCode404</span></ScrollLink>
           </ScrollLink>
         </NavbarBrand>
         <div className="hidden lg:flex gap-6 px-5 justify-start ml-2 poppins-medium z-50">
@@ -69,23 +70,20 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.twitter} title="Twitter">
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.discord} title="Discord">
-            <DiscordIcon className="text-default-500" />
+            <span className="text-gray-600 text-lg dark:text-white px-2 py-2 rounded-2xl hover:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] "><RiTwitterXFill className=""/></span>
           </Link>
           <Link isExternal href={siteConfig.links.github} title="GitHub">
-            <GithubIcon className="text-default-500" />
+            <span className="text-gray-600 text-lg dark:text-white px-2 py-2 rounded-2xl hover:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"><FaGithub className="" /></span>
           </Link>
-          <ThemeSwitch />
+          <ThemeSwitch className=" text-gray-600 text-lg dark:text-white px-[7px] py-[7px] rounded-2xl hover:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" />
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <FaGithub className="text-black text-lg dark:text-white rounded-2xl hover:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" />
         </Link>
-        <ThemeSwitch />
+        <ThemeSwitch className="text-black text-lg dark:text-white px-2 py-2 rounded-2xl hover:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"/>
         <NavbarMenuToggle />
       </NavbarContent>
 
