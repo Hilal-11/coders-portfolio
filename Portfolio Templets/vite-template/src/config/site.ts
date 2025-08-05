@@ -4,10 +4,7 @@ export const siteConfig = {
   name: "Hi there i'm Hilal-11",
   description: "Designed for Designers to showcase their work",
   navItems: [
-    {
-      label: "Work",
-      to: "work_section",
-    },
+
     {
       label: "Projects",
       to: "projects_section",
@@ -26,10 +23,6 @@ export const siteConfig = {
     },
   ],
   navMenuItems: [
-    {
-      label: "Work",
-      to: "work_section",
-    },
     {
       label: "Projects",
       to: "projects_section",
