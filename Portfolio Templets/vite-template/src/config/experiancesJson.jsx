@@ -36,7 +36,7 @@
         projectsList: [
             {
                 projectId: "e",
-                projectImage: "https://framerusercontent.com/images/SS2HkQ5nDr1SYndxz6ZnZB5Y.png",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305561/Screenshot_2025-08-03_230537_cho01w.png",
                 projectLink: "http://github.com/Hilal-11"
             },
             {
@@ -65,7 +65,7 @@
         projectsList: [
             {
                 projectId: "i",
-                projectImage: "https://framerusercontent.com/images/SS2HkQ5nDr1SYndxz6ZnZB5Y.png",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305561/Screenshot_2025-08-03_230537_cho01w.png",
                 projectLink: "http://github.com/Hilal-11"
             },
             {
@@ -91,10 +91,25 @@
         experianceDiscaription: "As an AI Integration Engineer, I integrated cutting-edge AI features into web and mobile applications using models from OpenAI and other providers. My responsibilities included integrating chatbots, recommendation engines, and smart search capabilities using GPT, LangChain, and vector databases like Pinecone.",
         listOfSkills: ["OpenAI GPT", "LangChain", "Vector Databases", "Pinecone", "Chatbot Integration", "API Integration", "AI Prompts"],
         projectsList: [
+{
+                projectId: "aazx",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305561/Screenshot_2025-08-03_230537_cho01w.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
             {
-            projectId: "g",
-            projectImage: "https://framerusercontent.com/images/SGrSKaM4fL9svA6GduHG0d5Ak.png",
-            projectLink: "http://github.com/Hilal-11"
+                projectId: "bs098",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305562/Screenshot_2025-08-03_230551_lw86cw.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
+            {
+                projectId: "cd44",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305606/Screenshot_2025-08-03_230628_wtc5r1.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
+            {
+                projectId: "df",
+                projectImage: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?scale-down-to=1024",
+                projectLink: "http://github.com/Hilal-11",
             }
         ]
     },
@@ -105,10 +120,25 @@
         experianceDiscaription: "In my role as a Cross-Platform App Developer, I built mobile and desktop applications using frameworks like React Native and Flutter. These apps provided consistent performance and design across Android, iOS, and web platforms. I focused on writing reusable code components, handling platform-specific design adaptations, and integrating backend services to deliver seamless user experiences on multiple devices.",
         listOfSkills: ["React Native", "Flutter", "Expo", "Firebase", "Push Notifications", "Platform-Specific Styling", "Navigation"],
         projectsList: [
+{
+                projectId: "as",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305561/Screenshot_2025-08-03_230537_cho01w.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
             {
-            projectId: "h",
-            projectImage: "https://framerusercontent.com/images/SbRr4hUtKZ8l9f5b8H1h7I4Zbk.png",
-            projectLink: "http://github.com/Hilal-11"
+                projectId: "bcx",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305562/Screenshot_2025-08-03_230551_lw86cw.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
+            {
+                projectId: "cer",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305606/Screenshot_2025-08-03_230628_wtc5r1.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
+            {
+                projectId: "d55",
+                projectImage: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?scale-down-to=1024",
+                projectLink: "http://github.com/Hilal-11",
             }
         ]
     },
@@ -119,10 +149,25 @@
         experianceDiscaription: "As a Data Scientist, I extracted insights from large datasets to support decision-making and feature development. I used Python libraries like Pandas, NumPy, and Matplotlib for data analysis and visualization. I also applied machine learning techniques using Scikit-learn to create predictive models and conducted exploratory data analysis to uncover hidden patterns. My focus was on translating raw data into actionable intelligence for business and product teams.",
         listOfSkills: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-learn", "EDA", "ML Models", "Jupyter Notebook"],
         projectsList: [
+{
+                projectId: "aae4",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305561/Screenshot_2025-08-03_230537_cho01w.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
             {
-            projectId: "i",
-            projectImage: "https://framerusercontent.com/images/SLDkd7fZ8nJZtOkcHv9cAyUpK8.png",
-            projectLink: "http://github.com/Hilal-11"
+                projectId: "b84",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305562/Screenshot_2025-08-03_230551_lw86cw.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
+            {
+                projectId: "c10",
+                projectImage: "https://res.cloudinary.com/dou5rypdf/image/upload/v1754305606/Screenshot_2025-08-03_230628_wtc5r1.png",
+                projectLink: "http://github.com/Hilal-11",
+            },
+            {
+                projectId: "d66",
+                projectImage: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?scale-down-to=1024",
+                projectLink: "http://github.com/Hilal-11",
             }
         ]
     }
