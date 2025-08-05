@@ -19,8 +19,8 @@ export default function DocsPage() {
           </div>
           <div className="py-4">
             <p className="text-center poppins-bold text-sm">Avalable for work</p>
-            <h1 className="text-4xl poppins-bold text-center py-2">Bark Aten</h1>
-            <p className="text-center poppins-medium py-1">Frontend/Backend Developer and UI/UX Interaction Designer Based in Turkey.</p>
+            <h1 className="text-4xl poppins-bold text-center py-2">Hial Ahmad</h1>
+            <p className="text-center poppins-medium py-1">Frontend/Backend Developer and UI/UX Interaction Designer.</p>
 
             <div className="flex justify-evenly py-5">
               <span className="text-xl bg-slate-200 dark:bg-slate-800 p-2 rounded-full"><FaGithub /></span>
@@ -54,7 +54,7 @@ export default function DocsPage() {
         </div>
 
         <div className="py-10 px-2 lg:px-10 poppins-regular text-sm lg:text-lg">
-              <p>I'm Bark Aten, a passionate Web Designer & Developer based in the dynamic city of Berlin, Germany. I blend creative design with precise technical execution to deliver outstanding digital experiences. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>I'm a passionate software engineer dedicated to crafting high-quality, fully responsive templates for portfolios, blogs, gyms, and more. Using the latest frontend and backend technologies, I build scalable, user-centric solutions that are ready to deploy and easy to customize.</p>
             </div>
 
             <div className="flex gap-3 lg:gap-5 justify-evenly flex-wrap lg:px-10 py-6 lg:h-auto h-[260px] overflow-hidden z-10">
