@@ -11,7 +11,7 @@ export const siteConfig = {
     },
     {
       label: "Experiance",
-      to: "experiance_section",
+      to: "experiance-section",
     },
     {
       label: "About",
@@ -29,7 +29,7 @@ export const siteConfig = {
     },
     {
       label: "Experiance",
-      to: "experiance_section",
+      to: "experiance-section",
     },
     {
       label: "About",
