@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavigationData , ServicesData } from "@/config/footerData";
 import { FaGithub, FaTwitter, FaLinkedin , FaFacebook } from "react-icons/fa";
-
+import { Link as ScrollLink } from 'react-scroll';
 function Footer() {
   return (
     <div className=' w-full h-auto bg-slate-50 dark:bg-black lg:py-10 border-t border-slate-300 dark:border-neutral-700 py-16'>
@@ -20,7 +20,7 @@ function Footer() {
             <div>
               <h1 className='text-3xl poppins-medium '>About Us</h1>
               <div className='py-4'>
-                <p className='text-[16px] poppins-medium lg:w-[300px]'>I'm Bark Aten, a passionate Web Designer & Developer based in the dynamic city of Berlin, Germany. I blend creative design with precise technical execution to deliver outstanding digital experiences.</p>
+                <p className='text-[16px] poppins-medium lg:w-[300px]'>I'm a software developer focused on creating clean, fast, and responsive web templates. From portfolios to blogs and gym websites, I combine design and code to build beautiful, functional experiences.</p>
               </div>
               <div className="flex justify-evenly py-5">
                 <span className="text-xl bg-slate-200 dark:bg-slate-800 p-2 rounded-full"><FaGithub /></span>
@@ -36,7 +36,11 @@ function Footer() {
               <div className='space-y-4  py-5'>
                 {
                   NavigationData.items.map((items) => (
-                    <li key={items.id} className='cursor-pointer hover:underline duration-500 poppins-medium text-sm list-none'>{items.linkItem}</li>
+                    <li key={items.id} className='cursor-pointer hover:underline duration-500 poppins-medium text-sm list-none'>
+                      <ScrollLink to={items.navigateTo} smooth={true}
+                        duration={500}
+                        offset={-50}>
+                      {items.linkItem}</ScrollLink></li>
                   ))
                 }
               </div>
@@ -46,7 +50,12 @@ function Footer() {
               <div className=' space-y-4 py-5 '>
                 {
                 ServicesData.items.map((items) => (
-                  <li key={items.id} className='cursor-pointer hover:underline duration-500 poppins-medium text-sm list-none'>{items.linkItem}</li>
+                  <li key={items.id} className='cursor-pointer hover:underline duration-500 poppins-medium text-sm list-none'>
+                    <ScrollLink to="hero-section" smooth={true}
+                        duration={500}
+                        offset={-50}>
+                      {items.linkItem}</ScrollLink>
+                    </li>
                 ))
               }
               </div>
@@ -62,8 +71,8 @@ function Footer() {
 
       <span className='hidden lg:visible block border-1-t w-[95%] border-b-danger-900 h-[1px] bg-gray-500 mx-auto'></span>
 
-      <div className='py-6 flex justify-center items-center poppins-bold'>
-          <h1 className='lg:text-[12rem] text-5xl '>BARK-ATEN</h1>
+      <div className='py-2 flex justify-center items-center poppins-bold'>
+          <h1 className='lg:text-[14rem] text-[7rem] '>Hilal</h1>
       </div>
         </div>
     </div>
