@@ -2,6 +2,8 @@
 interface LinkItem {
   id: number;
   linkItem: string;
+  navigateTo?: string;
+  
 }
 
 // Navigation interface
@@ -24,11 +26,11 @@ export interface GenericListType {
 export const NavigationData: GenericListType = {
   uniqueID: "1",
   items: [
-    { id: 1, linkItem: "Home" },
-    { id: 2, linkItem: "About" },
-    { id: 3, linkItem: "Projects" },
-    { id: 4, linkItem: "Services" },
-    { id: 5, linkItem: "Contact us" },
+    { id: 1, linkItem: "Home" , navigateTo: "hero-section" },
+    { id: 2, linkItem: "About" , navigateTo: "about_section" },
+    { id: 3, linkItem: "Projects" , navigateTo: "projects_section" },
+    { id: 4, linkItem: "Experiance" , navigateTo: "experiance-section" },
+    { id: 5, linkItem: "Contact us" , navigateTo: "contact_section" },
   ]
 };
 
