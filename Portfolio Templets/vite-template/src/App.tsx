@@ -6,6 +6,7 @@ import Contect from "./pages/Contect";
 import Projects from "./components/Projects Section/Projects";
 import ProjectsPreview from './pages/Projects/ProjectsPreview'
 import DefaultLayout from "./layouts/default";
+import Experiance from "./pages/Experiance";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
                   </DefaultLayout>
                   <Projects />
                   <About/>
+                  <Experiance />
                   <Contect />
               </>
             }></Route>
