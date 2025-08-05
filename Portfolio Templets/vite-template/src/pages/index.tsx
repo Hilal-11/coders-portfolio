@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { GrFormNextLink } from "react-icons/gr";
 import HorizentalMoveSkills from "@/components/HorizentalMoveSkills";
-import Projects from "@/components/Projects Section/Projects";
 import myCv from '../../public/cv.pdf'
 export default function IndexPage() {
   // Page transition variants
@@ -124,7 +123,7 @@ export default function IndexPage() {
               duration: 1.9,
               delay: 2,
             }}
-          className="hidden lg:block relative -top-20 left-60 block w-[200px] h-[600px] lg:h-[800px] bg-gray-300 blur-3xl rounded-full -rotate-45"></motion.span>
+          className="hidden lg:block relative -top-70 -left-30 w-[200px] h-[600px] lg:h-[800px] bg-gray-300 blur-3xl rounded-full -rotate-45"></motion.span>
       </div>
       {/* <DefaultLayout> */}
         

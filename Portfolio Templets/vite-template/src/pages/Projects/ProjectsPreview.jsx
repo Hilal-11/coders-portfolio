@@ -45,8 +45,8 @@ function ProjectsPreview( ) {
             <div className='grid lg:grid-cols-2 grid-cols-1 w-full lg:gap-4 gap-2 '>
                 {
                     project.images.map((image) => (
-                        <div key={project.uniqueID} className=' rounded-2xl shadow-sm shadow-gray-400'>
-                            <img className='rounded-2xl object-cover' src={image} alt="Error" />
+                        <div key={project.uniqueID} className=' lg:rounded-2xl rounded-xl shadow-sm shadow-gray-400'>
+                            <img className='h-full rounded-2xl object-cover hover:mask-none transition duration-500' src={image} alt="Error" />
                         </div>
                     ))
                 }
