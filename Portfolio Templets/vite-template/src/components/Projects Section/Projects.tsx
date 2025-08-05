@@ -122,7 +122,7 @@ function Projects() {
               className='lg:w-1/2 px-6 poppins-regular text-xl text-center mx-auto'
               variants={itemVariants}
             >
-              I'm a passionate software engineer dedicated to crafting elegant solutions for complex problems. With expertise in full-stack development, I enjoy building user-centric applications that make a difference.
+              I'm a passionate software engineer dedicated to crafting high-quality, fully responsive templates for portfolios, blogs, gyms, and more. Using the latest frontend and backend technologies, I build scalable, user-centric solutions that are ready to deploy and easy to customize.
             </motion.p>
         </motion.div>
 
