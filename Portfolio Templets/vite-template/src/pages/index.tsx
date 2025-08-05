@@ -154,13 +154,13 @@ export default function IndexPage() {
                 transition: { duration: 0.3 }
               }}
             >
-              Hi there welcome, this is Bark Aten, the full stack developer with AI Integrations
+              Hi there welcome, this is Hilal, the full stack developer with AI Integrations
             </motion.h1>
             <motion.p 
               className="lg:px-34 poppins-medium text-lg lg:text-lg text-center py-6"
               variants={itemVariants}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi vel harum natus, blanditiis quae a dignissimos laboriosam dicta commodi et. Mollitia illum deleniti facere porro blanditiis similique dolores, quisquam magnam est illo reiciendis harum nemo.
+               Meet Hilal the self-proclaimed code wizard who can turn caffeine into beautiful websites. His passion for building clean and functional designs is only rivaled by his passion for finding the perfect GIF to express his excitement.
             </motion.p>
           </motion.div>
           <motion.div 
