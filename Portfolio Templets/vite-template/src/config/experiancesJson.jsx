@@ -88,7 +88,7 @@
     {
         id: 4,
         experianceSkillOption: "AI Integration",
-        experianceDiscaription: "As an AI Integration Engineer, I integrated cutting-edge AI features into web and mobile applications using models from OpenAI and other providers. My responsibilities included integrating chatbots, recommendation engines, and smart search capabilities using GPT, LangChain, and vector databases like Pinecone. I created intelligent user experiences that combined traditional development with AI-driven enhancements to improve user engagement and automation.",
+        experianceDiscaription: "As an AI Integration Engineer, I integrated cutting-edge AI features into web and mobile applications using models from OpenAI and other providers. My responsibilities included integrating chatbots, recommendation engines, and smart search capabilities using GPT, LangChain, and vector databases like Pinecone.",
         listOfSkills: ["OpenAI GPT", "LangChain", "Vector Databases", "Pinecone", "Chatbot Integration", "API Integration", "AI Prompts"],
         projectsList: [
             {
