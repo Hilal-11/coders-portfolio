@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavigationData , ServicesData } from "@/config/footerData";
 import { FaGithub, FaTwitter, FaLinkedin , FaFacebook } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
