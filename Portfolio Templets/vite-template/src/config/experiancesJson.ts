@@ -1,5 +1,24 @@
+import { ProjectItem } from './experiancesJson';
+import Experiance from '../pages/Experiance';
 
- const experianceData = [
+
+export interface ProjectItem {
+  projectId: string;
+  projectImage: string;
+  projectLink: string;
+}
+
+export interface ExperianceItem {
+  id: number;
+  experianceSkillOption: string;
+  experianceDiscaription: string;
+  listOfSkills: string[];
+  projectsList: ProjectItem[];
+}
+export type ExperianceConfig = ExperianceItem[];
+
+
+ const experianceData: ExperianceItem[] = [
     {
         id: 1,
         experianceSkillOption: "Frontend Development",
@@ -176,4 +195,4 @@
 
 ];
 
-export default experianceData
+export default experianceData;

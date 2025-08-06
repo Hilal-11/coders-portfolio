@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react';
 import { IoCubeOutline } from "react-icons/io5";
 import { ProjectsConfig } from '@/config/projectsData';
-import { RiArrowRightFill, RiGithubFill } from "react-icons/ri";
+import { RiArrowRightFill } from "react-icons/ri";
 import { motion, useInView } from "framer-motion";
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +11,7 @@ function Projects() {
   const [isShowAllProjects, setIsShowAllProjects] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const navigate = useNavigate('')
+  const navigate = useNavigate()
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },

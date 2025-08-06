@@ -1,4 +1,3 @@
-import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import {
   Navbar as HeroUINavbar,
@@ -14,7 +13,6 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { Logo } from "@/components/icons";
 
 import { Link as ScrollLink } from 'react-scroll';
 import { FaGithub } from "react-icons/fa";
@@ -25,7 +23,7 @@ import localhostIcon from '../../localhostLogo.svg'
 
 export const Navbar = () => {
 
-  const navigate = useNavigate('')
+  const navigate = useNavigate()
 
   return (
     <HeroUINavbar maxWidth="xl" position="sticky"  className="fixed z-50">

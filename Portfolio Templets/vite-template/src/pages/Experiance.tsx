@@ -2,7 +2,11 @@
 // import {Tabs, Tab, Card, CardBody} from "@heroui/react";
 import {Tabs, Tab} from "@heroui/tabs";
 import {Card, CardBody} from "@heroui/card";
-import experianceData from '@/config/experiancesJson'
+
+
+import experianceData from '@/config/experiancesJson';
+
+
 import { useState } from "react";
 function Experiance() {
     

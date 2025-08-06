@@ -1,7 +1,4 @@
-import { title } from "@/components/primitives";
-import DefaultLayout from "@/layouts/default";
 import { FaGithub, FaTwitter, FaLinkedin , FaFacebook } from "react-icons/fa";
-import { RiArrowRightFill } from "react-icons/ri";
 import { MdArrowOutward } from "react-icons/md";
 import { techIcons } from "@/config/skillsIcon";
 

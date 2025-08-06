@@ -1,4 +1,3 @@
-import React from 'react'
 function contect() {
   return (
     <div id='contact_section' className='bg-slate-50 dark:bg-black w-full h-auto flex justify-center items-center py-10 px-3 lg:py-28'>
