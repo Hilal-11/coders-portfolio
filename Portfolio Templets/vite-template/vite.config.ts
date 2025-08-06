@@ -5,21 +5,6 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), tailwindcss()],
-
-  build: {
-    chunkSizeWarningLimit: 1000, // Set higher limit
-    // OR: Use manual chunks for better code splitting
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          // split large libs
-        },
-      },
-    },
-  },
-
-
 });
 
 
