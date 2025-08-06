@@ -36,10 +36,17 @@ function Footer() {
                 {
                   NavigationData.items.map((items) => (
                     <li key={items.id} className='cursor-pointer hover:underline duration-500 poppins-medium text-sm list-none'>
-                      <ScrollLink to={items.navigateTo} smooth={true}
-                        duration={500}
-                        offset={-50}>
-                      {items.linkItem}</ScrollLink></li>
+                      {items.navigateTo && (
+                        <ScrollLink 
+                          to={items.navigateTo} 
+                          smooth={true}
+                          duration={500}
+                          offset={-50}
+                        >
+                          {items.linkItem}
+                        </ScrollLink>
+                      )}
+                    </li>
                   ))
                 }
               </div>
@@ -50,10 +57,10 @@ function Footer() {
                 {
                 ServicesData.items.map((items) => (
                   <li key={items.id} className='cursor-pointer hover:underline duration-500 poppins-medium text-sm list-none'>
-                    <ScrollLink to="hero-section" smooth={true}
-                        duration={500}
-                        offset={-50}>
-                      {items.linkItem}</ScrollLink>
+                    
+                       
+                          {items.linkItem}
+                        
                     </li>
                 ))
               }
