@@ -13,7 +13,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          ui: ['@radix-ui/react-icons', 'lucide-react'],
           // split large libs
         },
       },
