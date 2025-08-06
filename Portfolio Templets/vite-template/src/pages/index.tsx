@@ -1,5 +1,4 @@
 
-import DefaultLayout from "@/layouts/default";
 import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { GrFormNextLink } from "react-icons/gr";
