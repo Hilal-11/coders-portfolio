@@ -11,9 +11,7 @@ import { useState } from "react";
 function Experiance() {
     
     const [readmore , setReadmore] = useState(false)
-    const handleReadMore = () => {
-        alert("Hi")
-    }
+ 
 
 
   return (
