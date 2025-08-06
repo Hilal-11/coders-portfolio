@@ -1,5 +1,3 @@
-import { ProjectItem } from './experiancesJson';
-import Experiance from '../pages/Experiance';
 
 
 export interface ProjectItem {
