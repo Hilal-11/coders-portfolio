@@ -29,17 +29,11 @@ export const Navbar = () => {
     <HeroUINavbar maxWidth="xl" position="sticky"  className="fixed z-50">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-0 ">
-          <ScrollLink
-            className="flex justify-start items-center gap-0"
-            color="foreground"
-            
-          >
-            {/* <Logo /> */}
             <ScrollLink to="hero-section" smooth={true}
             duration={500}
             offset={-50}
             className=" lg:poppins-medium lg:text-2xl cursor-pointer flex justify-center items-center "><span onClick={() => navigate('/')} className="flex justify-center items-center relative -left-4"><img className="w-12 lg:w-16 relative lg:left-2" src={localhostIcon} alt="Err" />localhost</span></ScrollLink>
-          </ScrollLink>
+      
         </NavbarBrand>
         <div className="hidden lg:flex gap-6 px-5 justify-start ml-2 poppins-medium z-50">
           {siteConfig.navItems.map((item) => (
@@ -103,7 +97,7 @@ export const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-50}
-                size="lg"
+                
               >
                 {item.label}
               </ScrollLink>
