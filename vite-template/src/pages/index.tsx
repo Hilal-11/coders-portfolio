@@ -104,6 +104,7 @@ export default function IndexPage() {
       animate="in"
       exit="out"
       variants={pageVariants}
+      className="max-w-[80%] mx-auto relative"
     >
 
       <div className="absolute">

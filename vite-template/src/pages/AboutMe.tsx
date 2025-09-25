@@ -38,8 +38,7 @@ export default function DocsPage() {
           </div>
         </div>
 
-        <div className="lg:col-span-2 w-full mx-auto relative overflow-hidden z-20">
-
+      <div className="lg:col-span-2 w-full mx-auto relative overflow-hidden z-20">
         <div className="flex justify-center gap-10 items-center absolute top-[100%] left-1/2 -z-10">
           <span className=" block w-[700px] h-[700px] rounded-full shadow-lg shadow-slate-950 dark:shadow-green-500 blur-[1px] absolute"></span>
           <span className=" block w-[600px] h-[600px] rounded-full shadow-lg shadow-slate-950 dark:shadow-green-500 blur-[1px] absolute"></span>

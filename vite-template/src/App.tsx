@@ -12,15 +12,13 @@ function App() {
     <>
           <Routes>
             <Route path="/" element={
-              <>
                   <DefaultLayout>
                     <IndexPage />
+                    <Projects />
+                    <About/>
+                    <Experiance />
+                    <Contect />
                   </DefaultLayout>
-                  <Projects />
-                  <About/>
-                  <Experiance />
-                  <Contect />
-              </>
             }></Route>
           
 
